@@ -1,193 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <!---Google Fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-   
-    <title>Katie's Food Blog</title>
+    <!-- <link rel="stylesheet" href="public/food.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>My Favorite Food</title>
 </head>
-
-
-
 <body>
-
-    <header>
-        <div class="nav">
-
-            <!-- Hamburger Menu-->
-            <label for="toggle" class="label_t">&#9776;</label>
-            <input type="checkbox" id="toggle">
-            <div class="menu">
-                <a href="index.html">home</a>
-        
-                <a href="recipe.html">recipe of the month</a>
-        
-                <a href="contact.html">about katie</a>
-            </div>
-        
+    <h1>My Favorite Food:</h1>
+    <div class="card" style="width: 18rem;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Hapus_Mango.jpg/440px-Hapus_Mango.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Mangoes</h5>
+          <p class="card-text">A mango is an edible stone fruit produced by the tropical tree Mangifera indica which is believed to have originated from the region between northwestern Myanmar, Bangladesh, and northeastern India. </p>
+          <a href="https://en.wikipedia.org/wiki/Mango" class="btn btn-primary">Learn More!</a>
         </div>
-
-         <br>
-       
-        <h1>Welcome to Katie's Kitchen</h1>
-        <h4>Here are some of my favorite recipes:</h4>
-
-
-    </header>
-
-    <div class="container1">
-        <!--Container One, First Row-->
-       
-                <!--Golden Milk-->
-                <figure>
-                    <a href="https://minimalistbaker.com/5-minute-vegan-golden-milk/" target="_blank">
-                        <img src="images/Golden Milk.jpg" alt="golden milk">
-                    </a>
-                    <figcaption>
-                        <br>
-                        Golden Milk
-                    </figcaption>
-                </figure>
-                <!--Chickpea Soup-->
-                <figure>
-                    <a href="https://midwestfoodieblog.com/chickpea-noodle-soup/" target="_blank">
-                        <img src="images/chickpea-noodle-soup-1-2.jpg" alt="soup">
-                    </a>
-                    <figcaption>
-                        <br>
-                       
-                        Chickpea Noodle Soup
-                    </figcaption>
-                </figure>
-            
-                <!--Mug Cake-->
-                <figure>
-                    <a href="https://baking-ginger.com/healthy-peanut-butter-mug-cake/?utm_medium=social&utm_source=pinterest&utm_campaign=tailwind_tribes&utm_content=tribes&utm_term=1047406190_48949358_81643"
-                        target="_blank">
-                        <img src="images/peanut butter mug.jpg" alt="mug cake">
-                    </a>
-                    <figcaption>
-                        <br>
-                       
-                        Peanut Butter Mug Cake
-                    </figcaption>
-                </figure>
-          <br>
-          <br>
-          <figure class="aboutkt">
-                <img src="images/kt.jpg" class="kt_img" alt="katie">
-                <figcaption class="aboutktcap">
-                    <p>My name is Katie. I live in Denver. I stick to a Pescatarian diet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla vitae a, sint provident praesentium
-                        tempora fugiat esse aperiam ducimus voluptas consequatur perspiciatis dolorem dolore ipsam iusto
-                        placeat, beatae ea doloribus.</p>
-                        <!--Learn More Button-->
-                        <a href="contact.html" target="_blank">
-                        <h3 class="learnbutton">Learn More About Katie</h3></a>
-                </figcaption>
-            </figure>
-
-           
-        <!--Container One, Second Row-->
-   
-            
-                <!--Ranch-->
-                <figure>
-                    <a href="https://cozypeachkitchen.com/easy-vegan-ranch-dressing/" target="_blank">
-                        <img src="images/vegan ranch.jpg" alt="vegan ranch" width="280px" height="350px">
-                    </a>
-                    <figcaption>
-                        <Br>
-                        Vegan Ranch Dressing
-                    </figcaption>
-                </figure>
-        
-        
-                <!--Crispy Broc-->
-                <figure>
-                    <a href="https://gimmedelicious.com/air-fryer-broccoli/" target="_blank">
-                        <img src="images/crispy broc.jpg" alt="crispy broccoli" width="280px" height="350px">
-                    </a>
-                    <figcaption>
-                        <br>
-                        Crispy Broccoli
-                    </figcaption>
-                </figure>
-           
-            
-                <!--Nana Pancakes-->
-                <figure>
-                    <a href="https://www.runningwithspoons.com/easy-banana-oat-pancakes/"
-                        target="_blank">
-                        <img src="images/banana cakes.jpg" alt="banana pancakes" width="280px" height="350px">
-                    </a>
-                    <figcaption>
-                        <br>
-                        Banana Oat Pancakes
-                    </figcaption>
-                </figure>
-            
-            
-            
-            
-        
-    </div>
-    <br>
-    <br>
-    <div class="container2">
-       
-            
-<!--Sign Up Form-->
-            <form class="form">
-                <h3>Stay Connected!</h3>
-                <p>Sign up below to get weekly recipe updates.</p>
-                <form action="/action_page.php">
-                    <label for="fname" class="f.label">First name:</label>
-                  
-                    <input type="text" id="fname" name="fname"><br><br>
-                    <label for="lname" class="f.label">Last name:</label>
-                    
-                    <input type="text" id="lname" name="lname"><br><br>
-                    <label for="email" class="f.label">Email address:</label>
-                    <input type="text" id="email" name="email"><br><br>
-                    <input type="submit" value="Submit" class="submit">
-                  </form>
-        
-    </div>
-<br>
-    <!--Footer-->
-    <hr>
-        <div class="footer-basic">
-            <footer>
-              
-                <a href="https://www.facebook.com/katie.broz/" target="_blank">
-                    <img src="images/fb logo.png" class="social"
-                        alt="facebook logo" width="40px" height="40px">
-                </a>
-                <a href="https://www.instagram.com/kbrozzz/"target="_blank">
-                    <img src="images/iglogo.png" class="social" id="ig"
-                    alt="instagram logo" width="50px" height="40px"> </a>
-
-                    <a href="https://www.pinterest.com/kbrozzz/_saved/"target="_blank">
-                        <img src="images/pinlogo.png" class="social"
-                        alt="pinterestlogo"
-                        width="40px" height="40px"> </a>
-
-
-                <p> &copy; Katie's Kitchen &#124; 2021 &#124;<br>
-                    <a href="mailto:kmbroz@gmail.com">Email Me</a>
-
-                </p>
-            </footer>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/PeanutButter.jpg/500px-PeanutButter.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Peanut Butter</h5>
+          <p class="card-text">Peanut butter is a food paste or spread made from ground, dry-roasted peanuts. It commonly contains additional ingredients that modify the taste or texture, such as salt, sweeteners, or emulsifiers. </p>
+          <a href="https://en.wikipedia.org/wiki/Peanut_butter" class="btn btn-primary">Learn More!</a>
         </div>
-
-
-
-
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://www.dinneratthezoo.com/wp-content/uploads/2019/12/homemade-french-fries-5.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">French Fries</h5>
+          <p class="card-text">French fries (North American English), chips (British English),[1] finger chips (Indian English),[2] or French-fried potatoes are batonnet or allumette-cut[3] deep-fried potatoes, originating from either Belgium or France. </p>
+          <a href="https://en.wikipedia.org/wiki/French_fries" class="btn btn-primary">Learn More!</a>
+        </div>
+      </div>
+    
 </body>
-
 </html>

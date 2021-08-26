@@ -1,4 +1,6 @@
-var http= require("http");
+const http= require("http");
+const fs = require("fs");
+const express = require('express')
 
 var PORT=8080;
 
@@ -7,7 +9,7 @@ var server = http.createServer(handleRequest);
 //start our server
 server.listen(PORT, function(){
 //callback triggered when server is successfully listening, Hooray!
-console.log("server listening on: http://localhost:" + PORT);
+console.log("server listening on: http://localhost:" + PORT) + "Hooray!";
 
 });
 
@@ -15,10 +17,9 @@ console.log("server listening on: http://localhost:" + PORT);
 function handleRequest(req, res) {
 
     //capture the URL the request is made to 
-
     var path = req.url;
 
-    //console.log('current path, path')
+    console.log('current path, path')
     //Depending on the URL, display a different HTML file
 
     switch (path) {
@@ -36,8 +37,8 @@ function handleRequest(req, res) {
 //when someone visits the http://localhost:8080" path, this function is run:
 
 function displayRoot(res) {
-    var myHTML = "<html>" +
-    "<body><h1>Home Page</h1>" +
+    var home = "<html>" +
+    "<body><h1>Hello</h1>" +
     "<a href='/portfolio'>Portfolio</a>" +
     "</body></html>";
 
@@ -45,7 +46,7 @@ function displayRoot(res) {
     res.writeHead(200, { "Content-Type": "text/html:"})
 
     //End the response by sending the client the myHTML string (which gets rendered as an HTML document thanks to the code above)
-    res.end(myHTML);
+    res.end(home);
 }
 
 // When someone visits the "http://localhost:8080/portfolio" path, this function is run.
