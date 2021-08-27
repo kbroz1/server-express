@@ -11,7 +11,7 @@ var PORT=8080;
 //Setting up the Express app to handle data parsing for sending POST requests
 //app.use = tells app to use the following info
 app.use(express.urlencoded({extended:true}));
-app.use(exprerss.json());
+app.use(express.json());
 
 //routes
 //Basic routes that send the user to the different html pages
