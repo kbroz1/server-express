@@ -2,7 +2,7 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-const { resourceUsage } = require("process");
+
 
 //Sets up the Express App
 
@@ -89,6 +89,15 @@ app.get('/api/:characters', function(req, res){
         res.json(characters)
     }
 })
+
+//.post allows you to add something new, post something new to the website - like an input
+app.post("/api/chracters", function(req,res){
+    var newCharacter =req.body;
+    console.log(newCharacter)
+    characters.push(newCharacter);
+    //.push will add your new character to the bottom of array in json format
+    res.json(newCharacter);
+});
 
 
 //starts the server to begin listening for requests
